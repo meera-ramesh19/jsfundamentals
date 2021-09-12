@@ -1,6 +1,4 @@
-/* html{
-  text-align: center;
-} */
+
 body{
   margin: 0 auto;
   width: 960px;
@@ -94,7 +92,7 @@ section>video{
    align-items : center;
 
 }
-section>languages{
+section > languages{
   display : inline-flex;
   justify-content: center;
   width: 150px;
@@ -102,8 +100,13 @@ section>languages{
 
 }
 
+
+.image{
+  width:150px;
+  height:150px;
+}
  video {
-       display : inline -grid;
+       display : inline-grid;
        grid-template-columns : 50% 50%;
        width: 150px;
        height: 150px;
@@ -124,14 +127,49 @@ h3{
   justify-content: left;
   width: 150px; height: 150px;
 }
-.project_portfolio{
-  text-align: center;
+
+
+
+#play {
+  height: 40px;
+  width: 40px;
+  border: 0;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/1383113001_playback_play.png') center center no-repeat;
+
+    &:focus {
+    outline: none;
+  }
+}
+
+#pause {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/1383113014_playback_pause.png') center center no-repeat;
+  height: 30px;
+  width: 30px;
+  border: 0;
+
+  &:focus {
+    outline: none;
+  }
+}
+.languages {
+  cursor:pointer;
+  flex-direction:row;
+  display:flex;
+
+   justify-content:center;
+  align-items: center;
+}
+.languages #hindi, .languages #kannada , .languages #marathi
+{ margin-left :40px;}
+
+.project-portfolio {
+  text-align:center;
 }
 
 .portfolio{
   display: inline-grid;
   grid-template-columns: 50% 50%;
-  margin-left:
+  margin-left:150px;
 }
 .links-and-contact{
   display: inline-flex;

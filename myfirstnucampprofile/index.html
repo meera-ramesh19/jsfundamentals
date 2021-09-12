@@ -7,21 +7,14 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>title</title>
-
-
-
 </head>
 
 <body>
 
   <div class="container">
   <div class="intro">
-
-      <img class="picture-profile" src="profilepic.jpg" width=150 height=150/>
+      <img class="picture-profile" src="https://i.imgur.com/fYljkHn.jpg" width=150 height=150/>
       <h1>Profile - Meera Ramesh</h1>
-
-
-
   <nav>
         <a href="#about-me">About Me</a>
         <a href="#interests">My Interests</a>
@@ -92,12 +85,25 @@
     <section id="audio">
         <figure>
             <figcaption>Audio Element</figcaption>
-            <audio controls loop>
-               <source src="audios/SoundHelix-Song-4.mp3" type="audio/mpeg">
-                Your browser does not support the Audio Here is <a href="audios/SoundHelix-Song-4.mp3">
-               link to the <code>audio</code></a> instead.
-            </audio>
-            <p>Click on the play button to play a sound:</p>
+            <!-- <p>Click to play</p> -->
+
+            <!-- <div class="container"> -->
+
+            <!-- <h1>MP3 Playback via HTML5 Audio Elements</h1> -->
+            <h3>Track 1: "Tuesday" by Drake</h3>
+            <p>Create the audio element in HTML, then access DOM from JS.</p>
+            <audio id="track1" src="https://p.scdn.co/mp3-preview/0ba9d38f5d1ad30f0e31fc8ee80c1bebf0345a0c" controls="1"></audio>
+
+            <!-- <h3>Track 2: "Hold On, We're Going Home" by Drake</h3>
+            <p>Create the audio element in JS, then add to HTML DOM.</p>
+            <div id="track2container"></div>
+
+            <h3>Track 3: "Started from the Bottom"</h3>
+            <p>Not added to DOM, use a custom button to control it.</p>
+            <button id="customPlayButton" class="btn btn-primary">PLAY/PAUSE</button>
+
+            </div> -->
+
         </figure>
     </section>
 
@@ -105,44 +111,54 @@
     <section id="video">
         <figure>
             <figcaption>Video Element</figcaption>
+            <!-- <video controls loop width="150" height="150">
+                <source src="sunset.mp4" type="audio/mpeg"> Your browser does not support the Video Here is
+                <a href="https://i.imgur.com/NkJwbqh.jpg">link to the <code>video</code></a> instead.
+            </video> -->
             <video controls loop width="150" height="150">
-                <source src="downtown.mp4" type="audio/mpeg"> Your browser does not support the Audio Here is
-                <a href="nycsunset.jpg">link to the <code>video</code></a> instead.
-            </video>&nbsp&nbsp&nbsp
-            <a href="nycsunset.jpg" width="150" height="150">
-              <img src="nyclogo.png" width="150" height="150" alt="Downtown ">
+                <p>Click to play</p>
+                <source src="http://learn.shayhowe.com/assets/misc/courses/html-css/adding-media/earth.ogv" type="video/ogg">
+                <source src="http://learn.shayhowe.com/assets/misc/courses/html-css/adding-media/earth.mp4" type="video/mp4">
+                 Please <a href="http://learn.shayhowe.com/assets/misc/courses/html-css/adding-media/earth.mp4" download>download</a> the video.
+            </video>  &nbsp&nbsp&nbsp
+            <a href="https://i.imgur.com/NkJwbqh.jpg" width="150" height="150">
+              <img src="https://i.imgur.com/NkJwbqh.jpg" width="150" height="150" alt="Downtown ">
             </a>&nbsp&nbsp
-            <p>Click on the play button to play a sound:</p>
+
         </figure>
     </section>
 
-  <section id="languages">
-        <section id="hindi">
-            <figure>
-                <figcaption>Hndi</figcaption>
+  <section>
+        <p style="text-align:center">Language Newspaper</p>
+    <div class="languages">
+
+      <section id="hindi">
+             <figure>
+                 <figcaption>Hindi</figcaption>
                 <a href="https://www.bbc.com/hindi" hreflang="hi">
-                    <img src="images/hindi.png" alt="BBC news in Hindi" />
+                    <img class="image" src="https://i.imgur.com/4cZc9gf.jpg" alt="BBC news in Hindi" />
                 </a>
-            </figure>
+            </figure >
         </section>
 
         <section id="kannada">
-            <figure>
-                <figcaption>Kannada</figcaption>
+           <figure>
+                 <figcaption>Kannada</figcaption>
                 <a href="https://kannada.oneindia.com/?utm_medium=Desktop&utm_source=OI-EN&utm_campaign=menu-header" hreflang="kn">
-                    <img src="images/kannada.png" alt="Kannada e-Newspaper" />
+                    <img  class="image" src="https://i.imgur.com/Og0C5eg.jpg" alt="Kannada e-Newspaper"   />
                 </a>
-            </figure>
+             </figure>
         </section>
 
         <section id="marathi">
-            <figure>
-                <figcaption>Marathi</figcaption>
+             <figure>
+                 <figcaption>Marathi</figcaption>
                 <a href="https://www.lokmat.com" hreflang="mr">
-                    <img src="images/marathi.png" alt="Marathi e-Newspaper" />
+                     <img  class="image"  src="https://i.imgur.com/6EuaBnQ.jpg" alt="Marathi e-Newspaper" />
                 </a>
-            </figure>
+             </figure>
         </section>
+          </div>
     </section>
 
 
@@ -151,10 +167,10 @@
         <h3 class="project-portfolio"> My projects</h3>
         <section class="portfolio">
 
-            <img src="images/project-1.jpg" width=300 height=300/>
-            <img src="images/project-2.jpg" width=300 height=300/>
-            <img src="images/project-3.jpg" width=300 height=300/>
-            <img src="images/project-4.jpg" width=300 height=300/>
+            <img src="https://i.imgur.com/PPzSbtq.jpg" width=300 height=300/>
+            <img src="https://i.imgur.com/PWctcQX.jpg" width=300 height=300/>
+            <img src="https://i.imgur.com/AZ7eXAl.jpg" width=300 height=300/>
+            <img src="https://i.imgur.com/LzF6v4H.jpg" width=300 height=300/>
 
         </section>
     </section>
@@ -162,9 +178,9 @@
         <section class="links">
             <h3>Links</h3>
             <ul class="links-list">
-                <li><a href="https://github.com">Github</a></li>&nbsp
-                <li><a href="https://twitter.com">Twitter</a></li>&nbsp
-                <li><a href="https://www.linkedin.com">Linkedin</a></li>&nbsp
+                <li><a href="#">Github</a></li>&nbsp
+                <li><a href="#">Twitter</a></li>&nbsp
+                <li><a href="#">Linkedin</a></li>&nbsp
                 <li>
                     <a href="mailto:info@somehwere.com">Email</a>
                 </li>&nbsp
